@@ -1,0 +1,15 @@
+select {
+    -webkit-appearance: menulist;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 150px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.select-container{
+    text-align: right;
+}
+label{
+    color: #fff;
+}
