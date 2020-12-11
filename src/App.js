@@ -76,7 +76,7 @@ class App extends Component{
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/barbareshet" target="_blank" rel="noreferrer nofollow">
+                                <a href="https://github.com/barbareshet/monsters" target="_blank" rel="noreferrer nofollow">
                                     <i className="fab fa-github"></i>
                                 </a>
                             </li>
