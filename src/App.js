@@ -3,7 +3,7 @@ import './App.css';
 import CardList from "./components/card-list/card-list.component";
 import SearchBox from "./components/search-box/searchBox.component";
 import SelectMonster from "./components/select-monster/select-monster.component";
-
+import ScrollTopArrow from './components/scroll-top-arrow/scroll-top-arrow.component'
 
 class App extends Component{
     constructor() {
@@ -28,6 +28,9 @@ class App extends Component{
         this.setState({
             monsterType:e.target.value
         })
+    }
+    handleScrollUp(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
     }
     render() {
         const { monsters, searchField, monsterType } = this.state
@@ -102,6 +105,7 @@ class App extends Component{
                             </li>
                         </ul>
                     </div>
+                    <ScrollTopArrow handleScrollUp={this.handleScrollUp}/>
                 </footer>
             </div>
         )

@@ -1,0 +1,16 @@
+.scrollup{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.fas{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
