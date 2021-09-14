@@ -12,6 +12,7 @@
     transition: transform 0.25s ease-out;
     align-content: center;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .card-container:hover {
