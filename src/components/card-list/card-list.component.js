@@ -1,15 +1,21 @@
 import React from 'react';
 import './card-list.styles.css'
 import Card from "../card/card.component";
-import Fade from 'react-reveal/Fade';
+import { motion } from "framer-motion";
+
 const CardList = ({monsters, monsterType}) => {
 
     return (
         <div className="card-list">
             { monsters.map( monster => (
-                <Fade bottom key={monster.id}>
+                <motion.div bottom key={monster.id}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.5 }}
+                >
                     <Card monster={monster} type={monsterType}/>
-                </Fade>
+                </motion.div>
             ))}
         </div>
     );
